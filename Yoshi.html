@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Maya Yoshida</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+
+<body> 
+	<div id="header_container" class="backred">
+		<h1 id="header" class="titl">
+			<div>
+				<a href="#About"> About</a>
+				<span>  |  </span>
+				<a href="#Club"> Club Career  </a>
+				<span>  |  </span>
+				<a href="#International"> International Career</a>
+				<span>  |  </span>
+				<a href="#Stats"> Stats <a>
+				<span>  |  </span>
+				<a href="#Other"> Other Yoshidas </a>
+				<span class="right">
+					Maya Yoshida 
+				</span>
+			</div>
+		</div>
+			
+			
+	</h1>
+	
+
+
+	<div class="center">
+		 <!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 3</div>
+		    <img src="./celebration.jpg /" style="width:100% height:200px">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 3</div>
+		    <img src="./portrait.jpg /" style="width:100% height:200px">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 3</div>
+		    <img src="./FifaCover.jpg /" style="width:100% height:200px">
+		  </div>
+
+		  <!-- Next and previous buttons
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div> 
+	</div>
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	//function plusSlides(n) {
+	  //showSlides(slideIndex += n);
+	//}
+
+	// Thumbnail image controls
+	//function currentSlide(n) {
+	  //showSlides(slideIndex = n);
+	//}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	} 
+</script>
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3500); // Change image every 2 seconds
+} </script>
+
+	<div class="background">
+		<h1 class="section"> About Maya Yoshida<a class="anchor", id="About"> </a> </h1>
+			<p class="section">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in erat vulputate quam tincidunt aliquet at non nisi. Vivamus sed augue efficitur ante accumsan fermentum. Ut ornare ullamcorper varius. Sed efficitur in mi non condimentum. Nulla consequat feugiat convallis. Quisque ornare nisi in dui faucibus, non lobortis lectus lacinia. Vestibulum ut convallis diam. Mauris eget efficitur nisi, in auctor lorem. Quisque varius lobortis libero ac vestibulum. Sed non tempus mi. Donec porttitor metus arcu, a tincidunt arcu posuere et. Morbi luctus congue magna, a convallis felis semper sed. Quisque mattis nibh interdum auctor varius. Vivamus bibendum faucibus tincidunt. Nulla facilisi. Nullam porta, sem vitae sollicitudin posuere, ante enim mattis lorem, ac tincidunt felis diam ut dui.<br><br>
+
+			Ut sit amet tristique diam, a sodales lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed odio sem, sodales vitae suscipit luctus, commodo aliquet eros. Pellentesque mollis dolor et augue euismod porta. In aliquam vitae elit pharetra aliquam. Fusce fermentum nulla leo, in rutrum libero auctor eu. Sed mattis tincidunt magna eget luctus. Integer eget purus vehicula, tincidunt arcu quis, efficitur erat. Nulla pharetra, velit at auctor facilisis, odio justo scelerisque erat, iaculis accumsan nisl enim sit amet lorem. Integer turpis dui, pulvinar quis ornare nec, tincidunt eget felis. Suspendisse vulputate tortor nec magna facilisis pretium et sit amet ligula. Fusce id maximus sem. Pellentesque porta accumsan porttitor. </p>
+		<h1 class ="section"> Club Career <img src="./southampton.jpg /" width="25" height="25"><a class="anchor", id="Club"></a> </h1>
+			<p class ="section">  Sed et nibh eu ligula vehicula ultrices et a magna. Curabitur eget quam felis. In sodales hendrerit orci vitae consequat. Nunc non imperdiet est. Vestibulum pulvinar leo at tellus luctus, ut tempor libero pretium. Nam vel tristique nulla, vulputate pellentesque massa. Vestibulum suscipit felis vel risus laoreet luctus. Quisque semper nibh et est porta efficitur. Quisque nec feugiat magna. Aliquam eget gravida augue. <br><br>
+
+			Suspendisse blandit odio nec mauris dapibus, sit amet gravida elit cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi dui arcu, condimentum ut tortor id, pulvinar suscipit lacus. Donec mattis, massa id fringilla mollis, ipsum nunc pellentesque diam, id dignissim ex magna eu odio. Fusce nec blandit nisl. Suspendisse consequat vitae erat non dapibus. Pellentesque ut urna ligula. Sed commodo non nulla eu finibus. Ut odio ante, tincidunt at pulvinar et, bibendum in nulla. Quisque quis urna non neque vestibulum dapibus ac ut lorem. In volutpat, ante consequat iaculis sagittis, neque ipsum viverra nulla, eu semper lacus quam quis metus. In non pulvinar orci. In nec placerat risus, a congue turpis. Suspendisse a sem sit amet arcu venenatis mattis sed sit amet odio. Sed quis felis quam. </p>
+			<ul class="section">
+				<li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+				<li>Etiam pulvinar magna sed sem convallis consequat.</li>
+				<li>Praesent suscipit massa a purus pharetra tristique.</li>
+				<li>Nulla ut libero ac nisi ornare lobortis sed et dui.</li>
+				<li>Morbi non sem vel mi iaculis auctor.</li>
+			</ul>
+		<h1 class ="section"> International Career <img src="./japan.jpg /" width="35" height="25"><a class="anchor", id="International"></a></h1>
+			<p class="section"> Aenean sit amet euismod magna, ac sagittis lorem. Suspendisse et eleifend odio, at feugiat velit. Sed elit justo, aliquam nec lectus eget, luctus volutpat mi. Suspendisse non dignissim lectus. Duis fringilla magna quis velit sollicitudin, ac vehicula erat faucibus. Morbi eros neque, auctor in arcu non, malesuada sagittis justo. Vivamus iaculis urna velit, vel luctus orci egestas id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in molestie neque. Sed pharetra dui a justo imperdiet iaculis. Nunc faucibus lacus orci, quis gravida purus gravida non. Sed scelerisque massa massa, nec euismod velit sollicitudin eu. Nullam sed diam leo. Vestibulum tortor tortor, placerat at sem eget, auctor tempor velit. Aenean eget ex nunc. Nam lectus est, porttitor nec arcu vitae, lacinia commodo risus.<br><br>
+
+			Curabitur felis eros, laoreet eget ex ac, ultricies pharetra turpis. Quisque venenatis consectetur diam ut hendrerit. Nam diam neque, tincidunt a sollicitudin ut, rutrum quis ante. Cras convallis gravida enim a faucibus. Etiam ut ex ex. Morbi pulvinar lacus erat, sed facilisis nibh tincidunt non. Suspendisse quis metus rutrum, cursus sem vitae, tincidunt sem. Morbi ullamcorper est eu tincidunt eleifend. Integer at urna eu dui tincidunt rutrum cursus eu turpis. Etiam nec sapien euismod turpis ultricies aliquet non eget diam. Suspendisse id velit a mauris ornare vulputate eu a tortor. Vestibulum dignissim nunc dui, et lacinia nisl luctus sed. Donec sodales aliquam elit. Quisque elementum, odio ut consectetur facilisis, elit nisl mattis odio, ornare accumsan diam elit consequat sem. Vivamus hendrerit quis lorem ut condimentum. Ut sit amet nibh non orci egestas pretium. </p>
+		<h1 class="section"> Stats <a class="anchor", id="Stats"></a> </h1>
+			<h2 class="secondh"> Club </h2>
+				<table class="table" style="width: 400px">
+					<tr>
+						<th> Club </th>
+						<th> Seasons </th>
+						<th> Apps </th>
+						<th> Goals </th>
+					</tr>
+					<tr>
+						<td> Nagoya Grampus </td>
+						<td> 3 </td>
+						<td> 101 </td>
+						<td> 11 </td>
+					</tr>
+					<tr>
+						<td> VVV-Venlo </td>
+						<td> 4 </td>
+						<td> 63 </td>
+						<td> 5 </td>
+					</tr>
+					<tr>
+						<td> Southampton </td>
+						<td> 6 </td>
+						<td> 142 </td>
+						<td> 8 </td>
+					</tr>
+				</table>
+
+			<h2 class="secondh"> Japan </h2>
+				<table class="table" style="width: 150px">
+					<tr>
+						<th> Seasons </th>
+						<th> Apps </th>
+						<th> Goals </th>
+					</tr>
+					<tr>
+						<td> 8 </td>
+						<td> 80 </td>
+						<td> 10 </td>
+					</tr>
+				</table>
+		<h1 class = "section"> Other Notable Yoshidas <a class="anchor", id="Other"></a> </h1>
+			<div class="background">
+				<div class="picture">
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Shuhei_Yoshida"> <img src="./sony.jpg /" height="160" width ="253"> </a>
+						<p> Shuhei Yoshida (Yoshida Shuhei, born February 11, 1964) is a Japanese businessman. He is the President of Sony's Worldwide Studios for Sony Interactive Entertainment. Yoshida is among those responsible for the creation of Sony Computer Entertainment Inc.'s 170-person internal product development team. His internal product development operation includes studios in California (Foster City, San Diego, Santa Monica), as well as in Bend, Oregon, and Salt Lake City, Utah. <br> <br>
+
+						This may seem like a very successful man; however, he is nowhere near as great as Maya Yoshida.</p>
+				</div>
+				<div class="picture">
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Yoshida_Brothers"> <img src="./YoshiBros.jpg /" height="160" width ="253"> </a>
+						<p> The Yoshida Brothers are Japanese musicians who have released several albums.The two brothers are performers of the traditional Japanese music style of Tsugaru-jamisen which originated in northern Japan. <br><br>
+
+						Even combining the two of these brothers together, Maya Yoshida clearly comes out as the better Yoshida</p>
+				</div>
+				<div class ="picture">
+					<a target="_blank" href="https://www.amazon.com/Mr-Yoshidas-Original-Gourmet-Sauce/dp/B00CZ2NAY4"> <img src="./Sauce.jpg /" height="160" width ="160"> </a>
+						<p> Mr. Yoshida's Original Gourmet Sauce is sauce. <br><br>
+
+						This sauce doesn't even have a wikipedia page, making Maya Yoshida the far superior Yoshida in this case</p>
+			</div>
+
+
+
+
+	</div>
+
+</body>
+</html>
